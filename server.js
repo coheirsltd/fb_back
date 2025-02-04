@@ -24,8 +24,8 @@ app.get('/getMessages', GetMessages)
 app.get('/ban/:id', Ban)
 app.get('/checkBan/:id', CheckBan)
 
-const server = app.listen(port, "0.0.0.0", () => {
-    console.log(`The Server is running on http://0.0.0.0:${port}`);
+const server = app.listen(port, () => {
+    console.log(`The Server is runing on port http://localhost:${port}`);
 });
 
 
